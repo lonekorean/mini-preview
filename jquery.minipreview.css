@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0 10% 40px;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: justify;
+    color: #59513f;
+    background-color: #f5ead4;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    color: #537f7c;
+}
+
+.break {
+    text-align: center;
+}
+
+.mini-preview-wrapper {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    margin-top: -4px;
+    border: solid 1px #000;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .3);
+    transition: z-index steps(1) .3s, opacity .3s, margin-top .3s;
+}
+
+a:hover .mini-preview-wrapper {
+    z-index: 2;
+    opacity: 1;
+    margin-top: 6px;
+    transition: opacity .3s, margin-top .3s;
+}
+
+.mini-preview-loading, .mini-preview-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+.mini-preview-loading {
+    display: table;
+    height: 100%;
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #f5ead4;
+    background-color: #59513f;
+}
+
+.mini-preview-loading::before {
+    content: 'Loading...';
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mini-preview-cover {
+    background-color: rgba(0, 0, 0, 0); /* IE fix */
+}
+
+.mini-preview-frame {
+    border: none;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
