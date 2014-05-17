@@ -25,6 +25,7 @@
     
     var MiniPreview = function($el, options) {
         this.$el = $el;
+        this.$el.addClass(PREFIX + '-anchor');
         this.options = $.extend({}, this.defaultOptions, options);
         this.counter = MiniPreview.prototype.sharedCounter++;
     };
@@ -108,6 +109,7 @@
         },
 
         destroy: function() {
+            this.$el.removeClass(PREFIX + '-anchor');
             this.$el.parent().off(this.getNamespacedEvent('mouseenter'));
             this.$el.off(this.getNamespacedEvent('mouseenter'));
             this.$el.find('.' + PREFIX + '-wrapper').remove();

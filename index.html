@@ -4,8 +4,32 @@
         <meta charset="utf-8">
         <title>MiniPreview Demo</title>
 
-        <link href="./jquery.minipreview.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <style>
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0 10% 40px;
+                font-size: 2rem;
+                line-height: 1.5;
+                font-family: 'Roboto Slab', sans-serif;
+                text-align: justify;
+                color: #59513f;
+                background-color: #f5ead4;
+            }
+
+            a {
+                color: #537f7c;
+            }
+
+            .break {
+                text-align: center;
+            }
+        </style>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+        <!-- MiniPreview stuff here -->
+        <link href="./jquery.minipreview.css" rel="stylesheet">
         <script src="./jquery.minipreview.js"></script>
         <script>
             $(function() {
@@ -21,7 +45,7 @@
         </p>
         <p class="break">&bull; &bull; &bull;</p>
         <p id="p2">
-            Those previews were fetched as soon as this page loaded. This is great for having the previews ready ahead of time, but can eat up extra bandwidth. As an alternative, check out these links to <a href="http://abduzeedo.com/">Abduzeedo</a> and <a href="http://css-tricks.com/">CSS-Tricks</a>. These previews aren't fetched until you hover over this paragraph.
+            Those previews were fetched as soon as this page loaded. This is great for having the previews ready ahead of time, but can eat up extra bandwidth. As an alternative, check out these links to <a href="http://abduzeedo.com/">Abduzeedo</a> and <a href="http://www.smashingmagazine.com/">Smashing Magazine</a>. These previews aren't fetched until you hover over this paragraph.
         </p>
         <p class="break">&bull; &bull; &bull;</p>
         <p id="p3">

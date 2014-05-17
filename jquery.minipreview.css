@@ -1,26 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0 10% 40px;
-    font-size: 2rem;
-    line-height: 1.5;
-    font-family: 'Roboto Slab', sans-serif;
-    text-align: justify;
-    color: #59513f;
-    background-color: #f5ead4;
-}
-
-a {
+.mini-preview-anchor {
     display: inline-block;
     position: relative;
     white-space: nowrap;
-    color: #537f7c;
-}
-
-.break {
-    text-align: center;
 }
 
 .mini-preview-wrapper {
@@ -36,7 +17,7 @@ a {
     transition: z-index steps(1) .3s, opacity .3s, margin-top .3s;
 }
 
-a:hover .mini-preview-wrapper {
+.mini-preview-anchor:hover .mini-preview-wrapper {
     z-index: 2;
     opacity: 1;
     margin-top: 6px;
