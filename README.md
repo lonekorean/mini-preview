@@ -3,7 +3,7 @@ mini-preview
 
 jQuery plugin for adding live mini-previews to links on hover.
 
-###Usage
+### Usage
 
 Make sure you include both the CSS and the JS file on your page.
 
