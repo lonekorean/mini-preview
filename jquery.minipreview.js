@@ -2,7 +2,7 @@
  * MiniPreview v0.9
  *
  * @author  Will Boyd
- * @github  http://github.com/lonekorean/mini-preview
+ * @github  https://github.com/lonekorean/mini-preview
  */
 
 (function($) {

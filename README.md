@@ -1,11 +1,12 @@
-mini-preview
-============
+# mini-preview
 
 jQuery plugin for adding live mini-previews to links on hover.
 
-### Usage
+Check out [the demo](https://lonekorean.github.io/mini-preview/) to see how it looks.
 
-Make sure you include both the CSS and the JS file on your page.
+## Usage
+
+Make sure you include both the CSS and JS files on your page.
 
 Bind MiniPreview to a link like this:
 
@@ -20,4 +21,4 @@ The previous example specifies all the default values. If you're fine with those
 
 	$('a').miniPreview();
 
-Take a look at `index.html` to see the plugin in action.
+Take a look at `index.html` for example working code.
